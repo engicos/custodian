@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "Automata Language and Computation"
+    },
+    "Acronym": {
+      "type": "string",
+      "default": "ALC",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "SubjectCode": {
+      "type": "string",
+      "default": "COMP5.2",
+      "regex": "COMP\\d+.\\d+",
+      "required": true,
+      "unique": true
+    },
+    "lectures": {
+      "via": "subject",
+      "collection": "lecture"
+    }
+  }
+}
