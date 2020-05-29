@@ -62,8 +62,25 @@
       "required": true
     },
     "courses": {
-      "via": "Instructors",
-      "collection": "course"
+      "collection": "course",
+      "via": "Instructors"
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "ProfileImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
