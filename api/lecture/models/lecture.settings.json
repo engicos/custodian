@@ -16,8 +16,8 @@
       "type": "time"
     },
     "subject": {
-      "model": "course",
-      "via": "lectures"
+      "via": "lectures",
+      "model": "course"
     },
     "Weekday": {
       "type": "enumeration",

@@ -24,9 +24,9 @@
       "required": false
     },
     "author": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
     },
     "created": {
       "type": "datetime"

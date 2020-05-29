@@ -33,8 +33,14 @@
       "unique": true
     },
     "lectures": {
-      "via": "subject",
-      "collection": "lecture"
+      "collection": "lecture",
+      "via": "subject"
+    },
+    "Instructors": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "courses",
+      "dominant": true
     }
   }
 }
