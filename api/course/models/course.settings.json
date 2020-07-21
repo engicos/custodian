@@ -28,7 +28,7 @@
     "SubjectCode": {
       "type": "string",
       "default": "COMP5.2",
-      "regex": "COMP\\d+.\\d+",
+      "regex": "[A-Z]+\\d+.\\d+",
       "required": true,
       "unique": true
     },
