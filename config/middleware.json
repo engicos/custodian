@@ -15,5 +15,11 @@
       "parser",
       "router"
     ]
+  },
+  "settings": {
+    "cors": {
+      "origin": "https://companion-git-user-auth.engicos.vercel.app",
+      "credentials": true
+    }
   }
 }
